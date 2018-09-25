@@ -1,4 +1,4 @@
-/* COLORS USED */
+/* COLORS USED
 Primary color (black): #000000
 Primary color (teal): #35555C
 Secondary color (yellow): #DAC550
@@ -17,6 +17,7 @@ header {
   font-weight: 300;
   color: #000000;
 }
+
 body {
   font-family: 'Roboto Condensed', sans serif;
   font-size: 14px;
