@@ -15,11 +15,12 @@ Secondary color (grey): #676767
 .columns-container {
   font-size: 0;
   white-space: nowrap;
+  display: block;
 }
 
 .column-4 {
   font-size: 16px;
-  width: 24%;
+  width: 99%;
   display: inline-block;
   margin-right: 1%;
   text-align: center;
@@ -152,7 +153,7 @@ button:focus {
 }
 
 .fruit {
-  width: 5%;
+  width: 50px;
   display: inline-block;
 }
 
@@ -161,13 +162,17 @@ button:focus {
   display: inline-block;
 }
 
-@media all and (max-width: 500px) {
+.thumbnail {
+  transition: all 0.35s;
+}
+
+@media all and (min-width: 640px) {
   .logo {
-    height: 50px;
+    height: 100px;
   }
 
   .headshot {
-    height: 50px;
+    height: 20%;
   }
 
   h1 {
@@ -182,5 +187,30 @@ button:focus {
 
   .column-4:nth-child(2) {
   margin-right: 0;
+  }
+
+  @media all and (min-width: 1024px) {
+    .logo {
+      height: 100px;
+    }
+
+    .headshot {
+      height: 20%;
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: left;
+    }
+
+    .column-4 {
+      width: 24%;
+      margin-right: 1%;
+    }
+
+    .column-4:nth-child(2) {
+    margin-right: 0;
+    }
+
   }
 }
