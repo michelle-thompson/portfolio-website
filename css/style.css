@@ -126,7 +126,8 @@ a:active {
   text-decoration: line-through;
 }
 
-button {
+button,
+.button {
   border: none;
   font-family: inherit;
 
@@ -137,14 +138,15 @@ button {
   padding: 8px;
   border-radius: 3px;
   border: 1px solid #DAC550;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s;
 }
 
 button:hover,
-button:focus {
+.button:hover {
   cursor: pointer;
   background-color: #DAC550;
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 .headshot {
@@ -163,6 +165,19 @@ button:focus {
   display: inline-block;
 }
 
+@keyframes color-change {
+  0% {fill: #FFC700;}
+  50% {fill: #FFE867;}
+  100% {fill: #FFF4B4;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 
 /* Tablet */
 @media all and (min-width: 480px) {
