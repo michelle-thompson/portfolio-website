@@ -166,12 +166,16 @@ button:hover,
 }
 
 @keyframes color-change {
-  0% {fill: #FFC700;}
-  50% {fill: #FFE867;}
-  100% {fill: #FFF4B4;}
+  0% {fill: #FFF4B4;}
+  50% {fill: #FFC700;}
+  100% {fill: #FF6800;}
 }
 
 .sun {
+  width: 30%;
+}
+
+.sun path {
   animation-duration: 4s;
   animation-name: color-change;
   animation-iteration-count: infinite;
