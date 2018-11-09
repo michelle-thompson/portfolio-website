@@ -25,10 +25,15 @@ Secondary color (grey): #676767
   text-align: center;
   white-space: nowrap;
   transition: all 0.35s;
+  vertical-align:top;
 }
 
 .column-4:last-child {
   margin-right: 0;
+}
+
+.project-details {
+  display: none;
 }
 
 .navigation {
